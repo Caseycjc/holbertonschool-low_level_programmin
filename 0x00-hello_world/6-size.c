@@ -8,7 +8,7 @@ int main(void)
 
 	int intType;
 	float floatType;
-       	double doubleType;
+	double doubleType;
 	char charType;
 
     /* sizeof evaluates the size of a variable */
