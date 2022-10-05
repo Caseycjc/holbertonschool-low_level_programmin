@@ -6,7 +6,7 @@
  *
  * @s: s is the array
  *
- * return: always 0
+ * Return: Always 0.
  */
 char *string_toupper(char *s)
 {
@@ -20,5 +20,5 @@ char *string_toupper(char *s)
 		}
 	i++;
 	}
-	return (0);
+	return (s);
 }
