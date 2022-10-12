@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include "stdlib.h"
 
 /**
  * main - entry point
@@ -8,18 +9,16 @@
  */
 int main(int argc, char **argv)
 {
-	int n, ex;
-
-	ex = 0;
-	if (argc != 3)
+	if (argc > 2)
 	{
-		printf("%\n", "Error");
-		ex = 1;
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		return (0);
 	}
-	else
+	else if (argc < 3)
 	{
-		n = atoi(argv[1]) * atoi(argv[2]);
-		printf("%i\n", n);
+		printf("Error\n");
+		return (1);
 	}
-	return (ex);
+	return (0);
 }
+
