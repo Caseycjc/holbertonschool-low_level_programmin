@@ -16,13 +16,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	dummy = malloc(5);
 	free(dummy);
-
 	if (s1 == NULL)
 		s1 = "";
-
 	if (s2 == NULL)
 		s2 = "";
-
 	while (s1[size1] != '\0')
 	{
 		size1++;
@@ -53,4 +50,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	return (p);
 }
-
