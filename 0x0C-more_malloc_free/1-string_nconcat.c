@@ -11,8 +11,11 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *p;
+	char *p, *dummy;
 	unsigned int size1 = 0, size2 = 0, i;
+
+	dummy = malloc(5);
+	free(dummy);
 
 	if (s1 == NULL)
 		s1 = "";
