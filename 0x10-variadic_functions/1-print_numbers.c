@@ -3,8 +3,8 @@
 #include "variadic_functions.h"
 
 /**
- * print numbers - prints numbers
- * @seperator: a string
+ * print_numbers - prints numbers
+ * @separator: a string
  * @n: number of integers
  * Return: 0
  */
