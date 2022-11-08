@@ -6,7 +6,7 @@
  * @head: the pointer to the first node of a linked list
  *
  * Return: Nothing
- */ 
+ */
 void free_list(list_t *head)
 {
 	list_t *temp;
