@@ -6,7 +6,7 @@
  * add_node - adds a new node at the beginning of the list
  * @head: a linked list
  * @str: a string for the node
- *
+ * 
  * Return: the address of the new element or NULL
  */
 list_t *add_node(list_t **head, const char *str)
@@ -20,32 +20,13 @@ list_t *add_node(list_t **head, const char *str)
 			return (NULL);
 
 		temp->str = strdup(str);
-		temp->len = _strlen(str);
+		temp->len = strlen(str);
 		temp->next = *head;
 
 		*head = temp;
 
 		return (temp);
 	}
-
+	
 	return (0);
-}
-
-/**
- * _strlen - returns the length of a string
- * @s: string to count
- *
- * Return: string length
- */
-int _strlen(const char *s)
-{
-	int c = 0;
-
-	while (*s)
-	{
-		s++;
-		c++;
-	}
-
-	return (c);
 }
