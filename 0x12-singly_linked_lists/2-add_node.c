@@ -2,7 +2,7 @@
 #include <string.h>
 #include "lists.h"
 
-/** 
+/**
  * add_node - adds a new node at the beginning of the list
  * @head: a linked list
  * @str: a string for the node
@@ -20,7 +20,7 @@ list_t *add_node(list_t **head, const char *str)
 			return (NULL);
 
 		temp->str = strdup(str);
-		temp->len = strlen(str);
+		temp->len = _strlen(str);
 		temp->next = *head;
 
 		*head = temp;
@@ -32,12 +32,12 @@ list_t *add_node(list_t **head, const char *str)
 }
 
 /**
- * strlen - returns the length of the string
+ * _strlen - returns the length of a string
  * @s: string to count
  *
  * Return: string length
  */
-int strlen(const char *s)
+int _strlen(const char *s)
 {
 	int c = 0;
 
