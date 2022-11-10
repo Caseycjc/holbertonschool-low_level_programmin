@@ -1,7 +1,6 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * binary_to_uint - converts a binary number to an unsigned int
@@ -11,21 +10,28 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int len = 0, count = 0, sum = 0;
+	unsigned int res = 0;
+	int base = 1, i = 0;
 
 	if (b == NULL)
 		return (0);
 
-	len = strlen(b);
-	while (len--)
+	while (b[i + 1])
 	{
-		if (b[len] != 48 && b[len] != 49)
-			return (0);
-
-		if (b[len] == 49)
-			sum += 1 << count;
-		count++;
+		if (b[i] != '0' && b[i] != '1')
+		return (0);
+		i++;
 	}
 
-	return (sum);
-}
+	while (i >= 0)
+	{
+		res += ((b[i] - '0') * base);
+		base *= 2;
+		i--;
+	}
+
+	return (res);
+
+	}
+
+
