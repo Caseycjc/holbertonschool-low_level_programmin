@@ -1,7 +1,7 @@
 #ifndef _HASH_T
 #define _HASH_T
 
-/** 
+/**
  * struct hash_node_s - node of a hash table
  *
  * @key: The key, string
