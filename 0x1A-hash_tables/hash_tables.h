@@ -1,7 +1,8 @@
 #ifndef _HASH_T
 #define _HASH_T
 
-/** struct hash_node_s - node of a hash table
+/** 
+ * struct hash_node_s - node of a hash table
  *
  * @key: The key, string
  * The key is unique in the HashTable
